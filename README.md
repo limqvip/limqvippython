@@ -14,3 +14,4 @@ git clone git@github.com:AndyQiao/makefile_test.git code1 　　注：code1是�
 
 命令行配置用这个命令好
 echo "lcd_rotate=2" | sudo tee -a /boot/config.txt
+git remote -v
