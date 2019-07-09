@@ -46,3 +46,4 @@ int、long、short、unsigned、char、float、double、signed、_Bool、_Comple
 字符串是一个或多个字符的序列，双引号不是字符串的一部分。双引号告知编译器它跨起来的是字符串，正如单引号用于标识单个字符一样
 sizeof(name) sizeof(char)
 sizeof(name) sizeof(char) strlen()对于特定类型必须有()对于特定量可以不用()
+#### 4.3 常量和C预处理器
