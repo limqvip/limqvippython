@@ -47,3 +47,14 @@ int、long、short、unsigned、char、float、double、signed、_Bool、_Comple
 sizeof(name) sizeof(char)
 sizeof(name) sizeof(char) strlen()对于特定类型必须有()对于特定量可以不用()
 #### 4.3 常量和C预处理器
+转换说明   含义
+%c  把输入理解成字符
+%d  把输入理解成有符号的十进制整数
+%e %f %g %a  把输入理解成浮点数
+%E %F %G %A  把输入理解成浮点数
+%i  把输入理解成有符号的十进制整数
+%o  把输入理解成有符号的八进制整数
+%p  把输入理解成指针(地址)
+%s  把输入理解成字符串
+%u  把输入理解成无符号十进制整数
+%x %X  把输入理解成无符号十六进制整数
