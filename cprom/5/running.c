@@ -1,6 +1,6 @@
 #include<stdio.h>
 const int S_PER_M = 60;//1分钟的秒数
-const int S_PER_M = 3600;//1小时的分钟数
+const int S_PER_H = 3600;//1小时的分钟数
 const double M_PER_K = 0.62137;//1公里的英里数
 int main(void)
 {
@@ -15,8 +15,25 @@ int main(void)
 	printf("This program converts your time for a metric race\n");
 	printf("to a time for running a mile and to your average\n");
 	printf("speed in miles per hour.\n");
+	printf("Please enter, in kilometers, the distance run.\n");
+	scanf("%lf",&distk); //lf表示读取一个double类型的值
+	printf("Next enter the time in minutes and seconds.\n");
+	printf("Begin by entering the minutes.\n");
+	scanf("%d", &min);
+	printf("Now enter the seconds.\n");
+	scanf("%d", &sec);
 
+	time = S_PER_M * min + sec;    //把时间转换成秒
+	distm = M_PER_K * distk; //把公里转黄成英里
+	rate = distm / time * S_PER_H;//英里每小时
+	mtime = (double) time / distm;//时间/距离 = 跑一公里所用的时间
+	mmin = (int) mtime / S_PER_M;//求出分钟数
+	msec = (int) mtime % S_PER_M;//求剩余的秒
 
+	printf("You ran %1.2f km (%1.2f miles) in %d min, %d sec.\n",distk, distm, min, sec);
+	printf("That pace corresponds to running a mile in %d min,",mmin);
+	printf("%d sec.\nYour average speed was %1.2f mph.\n",msec,rate);
 
+	return 0;
 
 }
