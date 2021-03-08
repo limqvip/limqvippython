@@ -145,7 +145,9 @@ git pull origin master
 　　而fetch是单纯将代码从远程仓库同步至本地仓库，并不作merge。
 
 ```
-git fetchgit diff origin/mastergit merge origin
+git fetch
+git diff origin/master
+git merge origin
 ```
 
 ​     三个步骤分别代表：取远程仓库至本地，保存版本号至.git/FETCH_HEAD；比较远程origin/master分支与本地差别；将远程origin/master merge至本地仓库。与直接pull相比，fetch后可以直观看到远程仓库的不同，再决定是否要merge，更加安全。
