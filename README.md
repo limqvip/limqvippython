@@ -188,4 +188,6 @@ usage: git remote [-v | --verbose]
 199.232.69.194 github.global.ssl.fastly.net
 
 　　git stash命令可以次工作区设置为上次提交后的情况，方便中途处理重要情况，之后通过stash pop将工作区恢复至之前的状况。
+why
+wh
 git push origin master
