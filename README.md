@@ -195,4 +195,5 @@ hosts文件增加两行，解决github登陆问题。C:\Windows\System32\drivers
 git stash命令可以次工作区设置为上次提交后的情况，方便中途处理重要情况，之后通过stash pop将工作区恢复至之前的状况。
 why
 wwdd
+[懒人教程](runoob.com)
 git push origin master
