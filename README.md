@@ -189,11 +189,16 @@ usage: git remote [-v | --verbose]
 
 hosts文件增加两行，解决github登陆问题。C:\Windows\System32\drivers\etc\hosts
 
+140.82.112.4 github.com
 140.82.114.4  github.com
 199.232.69.194 github.global.ssl.fastly.net
 
 git stash命令可以次工作区设置为上次提交后的情况，方便中途处理重要情况，之后通过stash pop将工作区恢复至之前的状况。
+
 [懒人教程](https://www.runoob.com)
+
 [w3cschool](https://www.w3school.com.cn/index.html)
+
 [w3cschool](https://www.w3cschool.cn/)
+
 git push origin master
